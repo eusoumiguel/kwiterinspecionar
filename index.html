@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kwitter</title>
+
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-firestore.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/live/3.1/firebase.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="kwitter.js"></script>
+</head>
+<body>
+	<script type="module">
+		// Import the functions you need from the SDKs you need
+		import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
+		// TODO: Add SDKs for Firebase products that you want to use
+		// https://firebase.google.com/docs/web/setup#available-libraries
+	  
+		// Your web app's Firebase configuration
+		const firebaseConfig = {
+		  apiKey: "AIzaSyARI89mcv8aJqVQRx_HJsL14qj2WK7PQv4",
+		  authDomain: "mckwitter.firebaseapp.com",
+		  databaseURL: "https://mckwitter-default-rtdb.firebaseio.com",
+		  projectId: "mckwitter",
+		  storageBucket: "mckwitter.appspot.com",
+		  messagingSenderId: "945613906106",
+		  appId: "1:945613906106:web:2ff131a934026b91d12283"
+		};
+	  
+		// Initialize Firebase
+		const app = initializeApp(firebaseConfig);
+	  </script>
+
+<center>
+	<h1 class="header">	
+		Kwitter	<sup>
+	<img src="m2.png">
+	</sup>
+</h1>
+
+	<div class="col-lg-4 col-md-6 col-sm-6 col-xs-11 login_div">
+
+	<img src="logo.png" class="logo">
+		<h3 >Descubra o que está acontecendo no mundo</h3>
+
+		<h4 >Junte-se ao Kwitter hoje</h4>
+		
+		<div class="form-group">
+		  <label >Nome de Usuário:</label>
+		 <input type="text" id="user_name" class="form-control" placeholder="Nome de Usuário">
+		</div>
+
+		<button id="login_button" class="btn btn-primary" onclick="addUser()">Entrar</button>
+		<br><br>
+	</div>
+</center>
+
+</body>
+</html>
